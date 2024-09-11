@@ -27,6 +27,7 @@ spec:
           ports:
             - name: http
               containerPort: {{ .Values.containerPort }}
+              nodePort: 30080
               protocol: TCP
           livenessProbe:
             httpGet:
